@@ -1,8 +1,8 @@
-package com.Santiago.domain;
+package com.santiago.domain;
 
 public class Producto {
-    private int codigo;
-    private String nombre;
+    private final int codigo;
+    private final String nombre;
     private int cantidad;
     private int precio;
     private String tipo;
@@ -33,6 +33,18 @@ public class Producto {
 
     public String getTipo() {
         return this.tipo;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }
 
