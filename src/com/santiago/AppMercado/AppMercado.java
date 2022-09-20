@@ -22,7 +22,7 @@ public class AppMercado {
         Mercado superMercado = new Mercado("El mercado del hogar", list);
         superMercado.agregar(productoUno);
         superMercado.agregar(productoDos);
-        for(int i = 0; i<superMercado.getProductos().size(); i++){
+        /*for(int i = 0; i<superMercado.getProductos().size(); i++){
             System.out.println(superMercado.getProductos().get(i).getNombre());
         }
 
@@ -30,12 +30,12 @@ public class AppMercado {
         System.out.println(superMercado.retirar("Coca-Cola"));
         for(int i = 0; i<superMercado.getProductos().size(); i++){
             System.out.println(superMercado.getProductos().get(i).getNombre());
-        }
-        System.out.println(superMercado.calcularTotal());
-        System.out.println(superMercado.buscar(2).getNombre());
+        }*/
+        //System.out.println(superMercado.calcularTotal());
+        //System.out.println(superMercado.buscar(2).getNombre());
         System.out.println(superMercado.buscar("Coca-Cola").getNombre() + " "
                 + superMercado.buscar("Coca-Cola").getPrecio());
-        System.out.println(superMercado.buscarPorTipo(tipoDeProducto.GASEOSA).get(0).getNombre());
+        //System.out.println(superMercado.buscarPorTipo(tipoDeProducto.GASEOSA).get(0).getNombre());
 
     }
 }

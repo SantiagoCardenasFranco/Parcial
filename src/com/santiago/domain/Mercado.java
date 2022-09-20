@@ -2,6 +2,7 @@ package com.santiago.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Mercado {
     private byte capacidad = 84;
@@ -40,18 +41,7 @@ public class Mercado {
     }
 
     public Producto buscar(String nombre){
-        Producto productoEncontrado = null;
-        for (int j = 0; j <= this.productos.size(); j++){
-            if (productos.get(j).getNombre().equals(nombre)){
-                productoEncontrado = new Producto(this.productos.get(j).getCodigo(),
-                        this.productos.get(j).getNombre(),
-                        this.productos.get(j).getCantidad(),
-                        this.productos.get(j).getPrecio(),
-                        this.productos.get(j).getTipo());
-                break;
-            }
-        }
-        return productoEncontrado;
+        return this.productos.stream().filter(m -> m.getNombre().equals(nombre)).toList().get(0);
     }
 
     public int buscarIndice(String nombre){
@@ -79,37 +69,17 @@ public class Mercado {
 
     public Producto buscar(int codigo)
     {
-        Producto productoEncontrado = null;
-        for (int k = 0; k <= this.productos.size(); k++) {
-            if (productos.get(k).getCodigo() == codigo) {
-                productoEncontrado = new Producto(this.productos.get(k).getCodigo(),
-                        this.productos.get(k).getNombre(),
-                        this.productos.get(k).getCantidad(),
-                        this.productos.get(k).getPrecio(),
-                        this.productos.get(k).getTipo());
-                break;
-            }
-        }
-        return productoEncontrado;
+        return this.productos.stream().filter(m -> m.getCodigo() == codigo).toList().get(0);
     }
 
     public List<Producto> buscarPorTipo (String tipo){
-        List<Producto> list = new ArrayList<>();
-        for (Producto producto : this.productos) {
-            if (producto.getTipo().equals(tipo)) {
-                list.add(producto);
-                break;
-            }
-        }
-        return list;
+        return this.productos.stream().filter(m -> m.getTipo().equals(tipo)).toList();
     }
 
     public int calcularTotal(){
-        int cantidadPorPrecio = 0;
-        for (int i = 0; i <this.productos.size(); i++){
-            cantidadPorPrecio = (this.productos.get(i).getPrecio() *
-                                this.productos.get(i).getCantidad()) + cantidadPorPrecio;
-        }
-        return cantidadPorPrecio;
+        AtomicInteger cantidadPorPrecio = new AtomicInteger();
+        return this.productos.stream().mapToInt(
+                p -> p.getCantidad()*p.getPrecio()).sum();
+
     }
 }

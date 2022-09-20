@@ -1,3 +1,9 @@
 
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(§§¥úÿÿÿÿ
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(§§¥úÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(§§¥úÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(§§¥úÿÿÿÿ
+`
+java:S1854P"ERemove this useless assignment to local variable "cantidadPorPrecio".( Ú¥‘úÿÿÿÿ
+Q
+java:S1481P"6Remove this unused "cantidadPorPrecio" local variable.( Ú¥‘úÿÿÿÿ
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Îï®çµ0

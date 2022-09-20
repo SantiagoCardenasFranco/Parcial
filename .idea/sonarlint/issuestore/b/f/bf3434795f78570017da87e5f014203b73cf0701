@@ -1,6 +1,6 @@
 
-l
-java:S1192"JDefine a constant instead of duplicating this literal "Coca-Cola" 4 times.(ñóÂ°ýÿÿÿÿ8³—Åâµ0
+e
+java:S1192"JDefine a constant instead of duplicating this literal "Coca-Cola" 3 times.(ñóÂ°ýÿÿÿÿ
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜’Îœ
 \
 java:S1854"ARemove this useless assignment to local variable "productoSiete".(Ñíá™ùÿÿÿÿ
@@ -22,11 +22,7 @@ F
 java:S1481"1Remove this unused "productoSeis" local variable.(Ò³ÿ
 M
 java:S1481"2Remove this unused "productoSiete" local variable.(Ñíá™ùÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ë“’Ê
-S	java:S106"9Replace this use of System.out or System.err by a logger.(§œ±ßùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(²ì¯åùÿÿÿÿ
-N	java:S106 "9Replace this use of System.out or System.err by a logger.(ë“’Ê
-U	java:S106""9Replace this use of System.out or System.err by a logger.(„ßüý8Ù—Åâµ0
-U	java:S106#"9Replace this use of System.out or System.err by a logger.(ãµö¥8Ú—Åâµ0
-Z	java:S106$"9Replace this use of System.out or System.err by a logger.(ëøôÿúÿÿÿÿ8Þ—Åâµ0
-Z	java:S106&"9Replace this use of System.out or System.err by a logger.(êçóóþÿÿÿÿ8à—Åâµ0
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ëøôÿúÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¯È™¥ÿÿÿÿÿ
+V	java:S125""<This block of commented-out lines of code should be removed.(Ë…»’ÿÿÿÿÿ
+V	java:S125&"<This block of commented-out lines of code should be removed.(´ÞÄ¶üÿÿÿÿ
